@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro — BettyLopDesigner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decoración de fondo: llaves, binarios y silueta de maniquí -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="glyph g1">&#123;</span>
+    <span class="glyph g2">&#125;</span>
+    <span class="glyph g3">&lt;/&gt;</span>
+    <span class="glyph g4">01</span>
+    <span class="glyph g5">10</span>
+    <span class="glyph g6">;</span>
+    <span class="mannequin-watermark">&#9812;</span>
+  </div>
+
+  <main class="page">
+
+    <header class="brand-header">
+      <img src="assets/logo.png" alt="BettyLopDesigner" class="brand-logo">
+      <div class="brand-text">
+        <p class="brand-eyebrow">EXCLUSIVE LAUNCH</p>
+        <h1 class="brand-title">BETTY<span>LOP</span>DESIGNER<span class="dot">.com</span></h1>
+      </div>
+    </header>
+
+    <section class="form-wrapper">
+
+      <!-- Tarjeta estilo "ventana de terminal / editor de código" -->
+      <div class="terminal-card">
+
+        <div class="terminal-titlebar">
+          <div class="tl-dots">
+            <span class="dot-btn dot-purple"></span>
+            <span class="dot-btn dot-gold"></span>
+            <span class="dot-btn dot-lime"></span>
+          </div>
+          <span class="tl-filename">Registro</span>
+          <span class="tl-badge">NEW!</span>
+        </div>
+
+        <div class="terminal-body">
+
+          <p class="terminal-intro">
+            <span class="comment">Crea tu cuenta y empieza a diseñar en código</span>
+          </p>
+
+          <form id="registroForm" class="form-code" action="#" method="POST" novalidate>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="&quot;Ej: Camila&quot;" required autocomplete="given-name">
+              </div>
+
+              <div class="field">
+                <label for="apellido"><span class="key">const</span> apellido <span class="op">=</span></label>
+                <input type="text" id="apellido" name="apellido" placeholder="&quot;Ej: Rodríguez&quot;" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="correo"><span class="key">const</span> correo <span class="op">=</span></label>
+              <input type="email" id="correo" name="correo" placeholder="&quot;tu@correo.com&quot;" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="telefono"><span class="key">const</span> telefono <span class="op">=</span></label>
+              <input type="tel" id="telefono" name="telefono" placeholder="&quot;+57 300 000 0000&quot;" required autocomplete="tel" pattern="^[0-9+\s]{7,15}$">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="password"><span class="key">let</span> password <span class="op">=</span></label>
+                <div class="input-icon-wrap">
+                  <input type="password" id="password" name="password" placeholder="••••••••" required minlength="8">
+                  <button type="button" class="toggle-eye" data-target="password" aria-label="Mostrar contraseña">&#128065;</button>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="password2"><span class="key">let</span> confirmar <span class="op">=</span></label>
+                <div class="input-icon-wrap">
+                  <input type="password" id="password2" name="password2" placeholder="••••••••" required minlength="8">
+                  <button type="button" class="toggle-eye" data-target="password2" aria-label="Mostrar contraseña">&#128065;</button>
+                </div>
+              </div>
+            </div>
+
+            <p id="matchMsg" class="match-msg"></p>
+
+            <button type="submit" class="btn-submit">
+              <span class="btn-icon">&#9889;</span> Enviar
+            </button>
+
+            <!-- Barra de estado tipo "consola de compilación" -->
+            <div class="status-bar" id="statusBar">
+              <span class="status-dot" id="statusDot"></span>
+              <span id="statusText">&gt; esperando datos...</span>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <aside class="side-note">
+        <p class="side-eyebrow">// por qué unirte</p>
+        <ul class="side-list">
+          <li><span class="bullet lime"></span> Acceso anticipado a colecciones "Born to Code"</li>
+          <li><span class="bullet gold"></span> Novedades y ofertas exclusivas</li>
+          <li><span class="bullet purple"></span> Guarda tus diseños favoritos</li>
+        </ul>
+      </aside>
+
+    </section>
+
+    <footer class="page-footer">© 2026 BettyLopDesigner — todos los derechos reservados</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

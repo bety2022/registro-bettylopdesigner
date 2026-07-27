@@ -1,0 +1,12 @@
+# Datos de usuarios generados en tiempo de ejecución — nunca subir a Git
+usuarios.json
+
+# Entornos virtuales de Python
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
