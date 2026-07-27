@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="BettyLopDesigner" width="140">
+<img src="Registro/assets/logo.png" alt="BettyLopDesigner" width="140">
+
 
 ### `> designer.mind + developer.logic` — **Born to Code** 💜
 
